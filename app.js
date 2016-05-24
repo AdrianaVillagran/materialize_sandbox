@@ -7,5 +7,6 @@ $(function() {
     // Parallax Effect
     $('.parallax').parallax();
 
+    // Initiates Modal triggers
     $('.modal-trigger').leanModal();
 });
