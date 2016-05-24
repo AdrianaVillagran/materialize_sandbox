@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link href="styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+     <div class="nav-wrapper">
+       <a href="index.html" class="brand-logo">Materialize Sandbox</a>
+       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+       <ul class="right hide-on-med-and-down">
+         <li><a target="_blank" href="https://en.wikipedia.org/wiki/Material_Design">What is Material Design</a></li>
+         <li><a target="_blank" href="http://materializecss.com/">Documentation</a></li>
+       </ul>
+       <ul class="side-nav" id="mobile-demo">
+         <li><a target="_blank" href="https://en.wikipedia.org/wiki/Material_Design">What is Material Design</a></li>
+         <li><a target="_blank" href="http://materializecss.com/">Documentation</a></li>
+       </ul>
+     </div>
+   </nav>
+
+   <!-- Parallax Header requires a bit o' jQuery -->
+   <div class="parallax-container">
+     <div class="parallax"><img src="https://material-design.storage.googleapis.com/publish/material_v_4/social.png"></div>
+     <div class="section no-pad-bot" id="index-banner">
+       <div class="container">
+         <br><br>
+         <h1 class="header center orange-text text-lighten-3">Try Materialize</h1>
+         <div class="row center">
+           <h5 class="col s12 light white-text">A modern responsive front-end framework based on Material Design. Created and designed by Google, Material Design is a design language that combines the classic principles of successful design along with innovation and technology.</h5>
+         </div>
+         <div class="row center">
+           <a target="_blank" href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+         </div>
+         <br><br>
+       </div>
+     </div>
+   </div>
+
+    <div class="container">
+
+      <!-- Grid -->
+      <div class="row">
+        <br>
+        <h2 class="header">Grid</h2>
+        <p class="flow-text">
+          Materialize comes with the classic 12 column responsive grid with offsets.
+          You can also change up the order by <em>push</em>-ing content right and <em>pull</em>-ing it left.
+        </p>
+        <div class="col s12 grid-example">12</div>
+        <div class="col s6 offset-s6 grid-example">6</div>
+        <div class="col s8 pull-right grid-example">8</div>
+        <div class="col s7 push-s5 grid-example"><span class="flow-text">This div is 7-columns wide on pushed to the right by 5-columns.</span></div>
+        <div class="col s5 pull-s7 grid-example"><span class="flow-text">5-columns wide pulled to the left by 7-columns.</span></div>
+      </div>
+
+      <!-- Color Classes -->
+      <div class="row">
+        <br>
+        <h2 class="header">Color</h2>
+        <p class="flow-text">
+          Materialize comes with a color palette based on material
+          design base colors. Each of these colors is defined with a base color class
+          and an optional lighten or darken class. These can be used to change background-color
+          or text color.
+        </p>
+        <div class="col s5 card-panel light-green lighten-4">
+          <span class="flow-text">Change the backgound with color classes!</span>
+        </div>
+
+        <div class="col s5 card-panel offset-s1">
+          <span class="red-text text-accent-2 flow-text">Or append "text" on color classes to change the text color!</span>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="row">
+        <br>
+        <h2 class="header">Buttons</h2>
+        <div class="col s12">
+          <br>
+          <h5 class="flow-text">Raised buttons</h5>
+          <a class="waves-effect waves-light btn">button</a>
+          <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
+          <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>
+        </div>
+        <div class="col s12">
+          <br>
+          <h5 class="flow-text">Floating Button</h5>
+          <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+          <br>
+          <br>
+          <h5 class="flow-text">Check out that sexy fixed action button in the bottom right corner</h5>
+
+        </div>
+
+        <!-- Fixed Action Button -->
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+          <a class="btn-floating btn-large red">
+            <i class="large material-icons">mode_edit</i>
+          </a>
+          <ul>
+            <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+          </ul>
+        </div>
+        <!-- End of fixed action button -->
+      </div>
+
+      <!-- Form -->
+      <div class="row">
+        <h2 class="header">Forms</h2>
+        <p class="flow-text">
+          There are a helluva lot more options with forms and they're super sexy.
+          So do some more investigating in the
+           <a target=">_blank" href="http://materializecss.com/forms.html">Materialize form docs</a>.
+        </p>
+        <a target=">_blank" href="http://materializecss.com/forms.html"></a>
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+              <label for="disabled">Disabled</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+
+      <div class="row">
+        <br>
+        <h2 class="header">Modals</h2>
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+          </div>
+        </div>
+
+        <!-- Modal Trigger -->
+        <a class="modal-trigger waves-effect waves-light btn" href="#modal2">Modal with a fixed footer</a>
+
+        <!-- Modal Structure -->
+        <div id="modal2" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>Pop-up 8-bit dreamcatcher beard, four dollar toast chia normcore kitsch readymade lomo blog tousled mumblecore chartreuse tote bag. Four dollar toast semiotics bespoke, venmo church-key kombucha VHS pickled kitsch williamsburg austin health goth bushwick portland chillwave. Cred tattooed retro hashtag distillery. Raw denim irony tilde, gastropub skateboard cronut normcore PBR&B vice 8-bit. 3 wolf moon thundercats mixtape tattooed. Distillery kickstarter mlkshk actually, green juice echo park lomo whatever drinking vinegar before they sold out affogato pinterest twee small batch mumblecore. Street art food truck leggings etsy selfies echo park, blue bottle cardigan disrupt occupy knausgaard listicle skateboard.
+
+              Trust fund authentic normcore cornhole sustainable viral. Williamsburg pug kitsch typewriter. Butcher bicycle rights master cleanse, affogato asymmetrical hoodie fixie humblebrag hella tousled put a bird on it microdosing slow-carb migas aesthetic. Keytar +1 gastropub messenger bag, banh mi blog vegan taxidermy four loko distillery flexitarian. Lo-fi salvia seitan mixtape. Wolf VHS try-hard austin post-ironic. XOXO put a bird on it plaid selvage irony gentrify.
+
+              Cornhole hashtag chia, VHS yuccie art party chambray tilde. Humblebrag cardigan 3 wolf moon, sartorial pug tofu pour-over raw denim. Mlkshk ethical biodiesel, gastropub chia mustache synth tousled irony vinyl microdosing 90's umami pitchfork. Disrupt cliche drinking vinegar migas cold-pressed post-ironic letterpress crucifix, mumblecore hella. Locavore tote bag tumblr lo-fi, blue bottle pickled yuccie. Authentic four loko cred wayfarers, viral williamsburg meggings portland cronut. Man bun mlkshk microdosing you probably haven't heard of them put a bird on it.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cards -->
+      <div class="row">
+        <br>
+        <h2 class="header">Cards</h2>
+        <div class="card col s5">
+          <div class="card-image">
+            <img src="https://material-design.storage.googleapis.com/publish/material_v_4/social.png">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+
+        <div class="card col s5 offset-s1">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="https://material-design.storage.googleapis.com/publish/material_v_4/social.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Typography -->
+      <div class="row">
+        <br>
+        <h2 class="header">Typography</h2>
+        <h1>Header 1</h1>
+        <h2>Header 2</h2>
+        <h3>Header 3</h3>
+        <h4>Header 4</h4>
+        <h5>Header 5 </h5>
+        <h6>Header 6</h6>
+        <blockquote>
+          This is an example quotation that uses the blockquote tag.
+        </blockquote>
+
+      </div>
+    </div>
+
+    <!-- Footer Code -->
+    <footer class="page-footer teal lighten-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      &copy; 2014 Copyright Text
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
+  <!-- Static JavaScript file -->
+  <script type="text/javascript" src="app.js"></script>
+
+  </body>
+</html>
